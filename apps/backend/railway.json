@@ -1,10 +1,9 @@
 {
   "build": {
-    "builder": "NIXPACKS",
-    "detectPackageManager": false
+    "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "npm install && npm run build && node dist/server.js",
+    "startCommand": "npm ci && npx tsc && node dist/server.js",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3
   }
