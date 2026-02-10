@@ -1,0 +1,18 @@
+{
+  "globalEnv": [
+    "NODE_ENV"
+  ],
+  "pipeline": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "outputs": [".next/**", "dist/**"],
+      "cache": true
+    },
+    "lint": {
+      "outputs": []
+    }
+  }
+}

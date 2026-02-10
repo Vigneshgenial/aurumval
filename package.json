@@ -1,0 +1,19 @@
+{
+  "name": "auruval",
+  "version": "1.0.0",
+  "description": "Gold portfolio management app - Free tier deployment",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.0"
+  }
+}
